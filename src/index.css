@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
 
-    --primary: 355 91% 54%;
+    --primary: 142 43% 35%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 240 4.8% 95.9%;
@@ -25,7 +25,7 @@
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
 
-    --accent: 125 55% 35%;
+    --accent: 142 43% 35%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
@@ -33,7 +33,7 @@
 
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 355 91% 54%;
+    --ring: 142 43% 35%;
 
     --radius: 0.75rem;
   }
@@ -58,11 +58,11 @@
   }
   
   .btn-primary {
-    @apply bg-apple-600 hover:bg-apple-700 text-white font-medium px-6 py-3 rounded-lg transition-all duration-300 ease-in-out shadow-sm hover:shadow-md;
+    @apply bg-leaf-600 hover:bg-leaf-700 text-white font-medium px-6 py-3 rounded-lg transition-all duration-300 ease-in-out shadow-sm hover:shadow-md;
   }
   
   .btn-secondary {
-    @apply bg-transparent border-2 border-apple-600 text-apple-600 hover:bg-apple-50 font-medium px-6 py-3 rounded-lg transition-all duration-300 ease-in-out;
+    @apply bg-transparent border-2 border-leaf-600 text-leaf-600 hover:bg-leaf-50 font-medium px-6 py-3 rounded-lg transition-all duration-300 ease-in-out;
   }
   
   .heading-xl {
@@ -117,8 +117,8 @@
   transform: translateY(0);
 }
 
-.apple-shadow {
-  box-shadow: 0 10px 25px -5px rgba(232, 30, 30, 0.1), 0 8px 10px -6px rgba(232, 30, 30, 0.1);
+.pine-shadow {
+  box-shadow: 0 10px 25px -5px rgba(30, 90, 30, 0.1), 0 8px 10px -6px rgba(30, 90, 30, 0.1);
 }
 
 .leaf-pattern {

@@ -5,13 +5,13 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-apple-900 text-white">
+    <footer className="bg-leaf-900 text-white">
       <div className="container-custom pt-16 pb-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1">
-            <a href="/" className="text-2xl font-serif font-bold">Gala Grove</a>
+            <a href="/" className="text-2xl font-serif font-bold">Pine Valley</a>
             <p className="mt-4 text-gray-300 text-sm">
-              Premium Gala apples grown with care in our sustainable orchards, delivering exceptional taste and quality in every bite.
+              Premium quality apples grown with care in our sustainable orchards, delivering exceptional taste and quality in every bite.
             </p>
             <div className="mt-6 flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="Facebook">
@@ -57,16 +57,16 @@ const Footer = () => {
                 <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Gala Apples</a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Royal Gala</a>
+                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Honeycrisp</a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Organic Gala</a>
+                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Organic Apples</a>
               </li>
               <li>
                 <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Apple Gift Boxes</a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Apple Juice</a>
+                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Apple Cider</a>
               </li>
             </ul>
           </div>
@@ -80,11 +80,11 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your email address"
-                className="bg-apple-800 border border-apple-700 rounded-l-lg px-4 py-2 text-white text-sm focus:outline-none focus:border-white transition-colors w-full"
+                className="bg-leaf-800 border border-leaf-700 rounded-l-lg px-4 py-2 text-white text-sm focus:outline-none focus:border-white transition-colors w-full"
               />
               <button
                 type="submit"
-                className="bg-apple-600 hover:bg-apple-500 text-white rounded-r-lg px-4 py-2 text-sm transition-colors"
+                className="bg-leaf-600 hover:bg-leaf-500 text-white rounded-r-lg px-4 py-2 text-sm transition-colors"
               >
                 Subscribe
               </button>
@@ -92,10 +92,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <hr className="border-apple-800 my-8" />
+        <hr className="border-leaf-800 my-8" />
 
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>© {currentYear} Gala Grove. All rights reserved.</p>
+          <p>© {currentYear} Pine Valley. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
