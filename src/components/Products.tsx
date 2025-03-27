@@ -1,9 +1,8 @@
-
 import { useEffect, useRef, useState } from "react";
 
 const Products = () => {
   const elementsRef = useRef<(HTMLDivElement | null)[]>([]);
-  const [selectedTab, setSelectedTab] = useState("gala");
+  const [selectedTab, setSelectedTab] = useState("schnico");
 
   useEffect(() => {
     const observerOptions = {
@@ -32,37 +31,21 @@ const Products = () => {
   }, []);
 
   const tabs = [
-    { id: "gala", label: "Gala" },
-    { id: "royal-gala", label: "Royal Gala" },
-    { id: "organic", label: "Organic Gala" }
+    { id: "schnico", label: "Schnico Red" },
+    { id: "darkbaron", label: "Dark Baron" },
+    { id: "devil", label: "Devil Gala" },
+    { id: "royal", label: "Royal Gala" }
   ];
 
   const products = {
-    gala: {
-      title: "Gala Apples",
-      description: "Our classic Gala apples are the perfect balance of sweet and crisp. Their beautiful red striped skin covers a creamy yellow flesh that's as delightful to look at as it is to eat. Ideal for fresh eating, salads, and light cooking.",
-      image: "https://images.unsplash.com/photo-1567306226408-c0feac0e2775?q=80&w=2670&auto=format&fit=crop",
+    schnico: {
+      title: "Schnico Red Gala",
+      description: "Schnico Red Gala apples are known for their vibrant red color and exceptional sweetness. These premium apples feature a bright crisp texture and a perfectly balanced flavor profile that makes them ideal for fresh eating and gourmet recipes.",
+      image: "/images/schnico.png",
       features: [
-        "Sweet, aromatic flavor",
-        "Crisp, fine-grained texture",
-        "Distinctive red-striped skin",
-        "Available September through May"
-      ],
-      nutrition: {
-        calories: "80 per medium apple",
-        fiber: "2g",
-        vitamin_c: "14% of daily value",
-        potassium: "4% of daily value"
-      }
-    },
-    "royal-gala": {
-      title: "Royal Gala Apples",
-      description: "Royal Gala apples are a premium selection with a more intense color and slightly sweeter flavor profile than regular Galas. These apples have a distinctive deep red blush covering most of the fruit, making them both beautiful and delicious.",
-      image: "https://images.unsplash.com/photo-1600612253971-422e7f7faeb6?q=80&w=2574&auto=format&fit=crop",
-      features: [
-        "Enhanced sweetness",
-        "Deep red coloration",
-        "Extra crisp texture",
+        "Vibrant red coloration",
+        "Exceptionally sweet flavor",
+        "Crisp, juicy texture",
         "Premium selection"
       ],
       nutrition: {
@@ -72,21 +55,55 @@ const Products = () => {
         potassium: "5% of daily value"
       }
     },
-    organic: {
-      title: "Organic Gala Apples",
-      description: "Our organic Gala apples are grown without synthetic pesticides or fertilizers, resulting in a pure, natural flavor. Certified organic and sustainably grown, these apples offer all the sweetness of Gala with the added benefits of organic farming practices.",
-      image: "https://images.unsplash.com/photo-1610397962076-02407a169a5b?q=80&w=2574&auto=format&fit=crop",
+    darkbaron: {
+      title: "Dark Baron Gala",
+      description: "Dark Baron Gala apples feature a distinctive deep burgundy color and rich, complex flavor. Their darker skin hides a crisp, aromatic flesh with notes of honey and vanilla, making them a sophisticated choice for connoisseurs.",
+      image: "/images/darkbaron.png",
       features: [
-        "Certified organic",
-        "No synthetic pesticides",
-        "Environmentally friendly",
-        "Natural, pure flavor"
+        "Deep burgundy coloration",
+        "Rich, complex flavor profile",
+        "Honey and vanilla notes",
+        "Firm, dense texture"
+      ],
+      nutrition: {
+        calories: "85 per medium apple",
+        fiber: "3g",
+        vitamin_c: "14% of daily value",
+        potassium: "6% of daily value"
+      }
+    },
+    devil: {
+      title: "Devil Gala Apple",
+      description: "The Devil Gala Apple stands out with its intense red color and bold, assertive flavor. These apples provide a perfect balance of sweetness and tanginess with a slightly spicy finish, making them particularly excellent for baking and cider.",
+      image: "/images/devil.png",
+      features: [
+        "Intense red coloration",
+        "Bold, assertive flavor",
+        "Perfect sweet-tart balance",
+        "Excellent for baking"
+      ],
+      nutrition: {
+        calories: "82 per medium apple",
+        fiber: "2.8g",
+        vitamin_c: "16% of daily value",
+        potassium: "5% of daily value"
+      }
+    },
+    royal: {
+      title: "Royal Gala Apples",
+      description: "Royal Gala apples are a premium selection with a more intense color and slightly sweeter flavor profile than regular Galas. These apples have a distinctive red blush covering most of the fruit, making them both beautiful and delicious.",
+      image: "/images/royalgala.png",
+      features: [
+        "Enhanced sweetness",
+        "Elegant red coloration",
+        "Extra crisp texture",
+        "Premium selection"
       ],
       nutrition: {
         calories: "80 per medium apple",
-        fiber: "2g",
-        vitamin_c: "14% of daily value",
-        potassium: "4% of daily value"
+        fiber: "2.5g",
+        vitamin_c: "15% of daily value",
+        potassium: "5% of daily value"
       }
     }
   };
@@ -107,13 +124,13 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="mb-12 flex justify-center">
+        <div className="mb-12 flex justify-center overflow-x-auto">
           <div className="inline-flex p-1 bg-gray-100 rounded-lg">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setSelectedTab(tab.id)}
-                className={`px-6 py-2.5 text-sm font-medium rounded-md transition-all duration-300 ${
+                className={`px-4 py-2.5 text-sm font-medium rounded-md transition-all duration-300 whitespace-nowrap ${
                   selectedTab === tab.id
                     ? "bg-white shadow-sm text-apple-700"
                     : "text-gray-600 hover:text-apple-600"

@@ -1,6 +1,5 @@
-
 import { useEffect, useRef } from "react";
-import { MapPin, Mail, Phone, Clock } from "lucide-react";
+import { Mail, Phone, Clock } from "lucide-react";
 
 const Contact = () => {
   const elementsRef = useRef<(HTMLDivElement | null)[]>([]);
@@ -45,23 +44,24 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          <div>
+        <div className="grid md:grid-cols-10 gap-12 px-[30px]">
+          <div className="md:col-span-7">
             <div 
               ref={el => elementsRef.current[1] = el}
               className="scroll-reveal"
             >
-              <div className="rounded-2xl overflow-hidden h-full shadow-lg apple-shadow">
-                <img 
-                  src="https://images.unsplash.com/photo-1507499739999-097f9693b6da?q=80&w=2574&auto=format&fit=crop" 
-                  alt="Our apple orchard location" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              {/* Google Calendar Appointment Scheduling */}
+              <iframe 
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ14AUe-5tkGg9w4HfNjQn2R9T77MwZTC5m7cQxjqXkJ95SrcETQM1m5dfLkD7E9549akWhzRBHa?gv=true" 
+                style={{ border: 0 }} 
+                width="100%" 
+                height="600" 
+                frameBorder="0"
+              ></iframe>
             </div>
           </div>
 
-          <div>
+          <div className="md:col-span-3">
             <div 
               ref={el => elementsRef.current[2] = el}
               className="scroll-reveal space-y-8"
@@ -70,29 +70,13 @@ const Contact = () => {
               <div className="flex items-start">
                 <div className="mr-4 mt-1">
                   <div className="bg-apple-100 p-2 rounded-full">
-                    <MapPin className="h-5 w-5 text-apple-600" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-serif text-xl font-bold text-apple-700 mb-2">Our Location</h3>
-                  <p className="text-gray-700">
-                    1234 Orchard Lane<br />
-                    Appleville, CA 95123<br />
-                    United States
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="mr-4 mt-1">
-                  <div className="bg-apple-100 p-2 rounded-full">
                     <Mail className="h-5 w-5 text-apple-600" />
                   </div>
                 </div>
                 <div>
                   <h3 className="font-serif text-xl font-bold text-apple-700 mb-2">Email Us</h3>
-                  <a href="mailto:info@galagrove.com" className="text-gray-700 hover:text-apple-600 transition-colors">
-                    info@galagrove.com
+                  <a href="mailto:info@pinevalleyagri.com" className="text-gray-700 hover:text-apple-600 transition-colors">
+                    info@pinevalleyagri.com
                   </a>
                 </div>
               </div>
@@ -105,8 +89,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-serif text-xl font-bold text-apple-700 mb-2">Call Us</h3>
-                  <a href="tel:+15551234567" className="text-gray-700 hover:text-apple-600 transition-colors">
-                    +1 (555) 123-4567
+                  <a href="tel:+919541099259" className="text-gray-700 hover:text-apple-600 transition-colors">
+                    +91-95 41 099 259
                   </a>
                 </div>
               </div>
@@ -118,14 +102,10 @@ const Contact = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-serif text-xl font-bold text-apple-700 mb-2">Visiting Hours</h3>
+                  <h3 className="font-serif text-xl font-bold text-apple-700 mb-2">Visiting Season</h3>
                   <p className="text-gray-700">
-                    Monday - Friday: 9am - 5pm<br />
-                    Saturday: 10am - 4pm<br />
+                    1st of July till 15th of September<br />
                     Sunday: Closed
-                  </p>
-                  <p className="text-sm text-gray-600 mt-2">
-                    * Orchard tours available during harvest season (September - October)
                   </p>
                 </div>
               </div>

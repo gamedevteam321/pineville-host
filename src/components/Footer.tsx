@@ -1,4 +1,3 @@
-
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 
 const Footer = () => {
@@ -54,19 +53,19 @@ const Footer = () => {
             <h4 className="font-semibold text-lg mb-4">Products</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Gala Apples</a>
+                <a href="#products" className="text-gray-300 hover:text-white transition-colors text-sm">Schnico Red Gala</a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Honeycrisp</a>
+                <a href="#products" className="text-gray-300 hover:text-white transition-colors text-sm">Dark Baron Gala</a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Organic Apples</a>
+                <a href="#products" className="text-gray-300 hover:text-white transition-colors text-sm">Devil Gala Apple</a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Apple Gift Boxes</a>
+                <a href="#products" className="text-gray-300 hover:text-white transition-colors text-sm">Royal Gala</a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">Apple Cider</a>
+                <a href="#products" className="text-gray-300 hover:text-white transition-colors text-sm">Redlum Gala</a>
               </li>
             </ul>
           </div>

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -24,13 +23,13 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-3" : "bg-transparent py-5"
+        isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-3" : "bg-white/70 backdrop-blur-sm py-5"
       }`}
     >
       <div className="container-custom">
         <div className="flex items-center justify-between">
           <a href="/" className="flex items-center">
-            <span className="text-leaf-700 font-serif text-2xl font-bold">Pine Valley</span>
+            <img src="/images/logo.png" alt="Pine Valley" className="h-12" />
           </a>
 
           {/* Desktop Navigation */}

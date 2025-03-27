@@ -1,9 +1,9 @@
-
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
-
+  const [activeBackground, setActiveBackground] = useState(0);
+  
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -17,15 +17,42 @@ const Hero = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Background image slideshow effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveBackground((prev) => (prev === 0 ? 1 : 0));
+    }, 7000); // Change background every 7 seconds
+    
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="home" className="relative h-screen flex items-center overflow-hidden">
-      {/* Background image with overlay */}
-      <div className="absolute inset-0 bg-apple-800/10 z-10"></div>
+      {/* Black overlay with 30% opacity */}
+      <div className="absolute inset-0 bg-black/30 z-10"></div>
+      
+      {/* Background image 1 */}
       <div 
         ref={heroRef}
-        className="absolute inset-0 -z-10"
+        className={`absolute inset-0 -z-10 transition-opacity duration-1000 ease-in-out ${
+          activeBackground === 0 ? 'opacity-100' : 'opacity-0'
+        }`}
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1596591868231-05e503c9489c?q=80&w=2574&auto=format&fit=crop')",
+          backgroundImage: "url('/images/Orchidbackground1_Herosection.jpeg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "120%", // Extra height for parallax
+          top: "-10%"
+        }}
+      ></div>
+      
+      {/* Background image 2 */}
+      <div 
+        className={`absolute inset-0 -z-10 transition-opacity duration-1000 ease-in-out ${
+          activeBackground === 1 ? 'opacity-100' : 'opacity-0'
+        }`}
+        style={{
+          backgroundImage: "url('/images/Orchidbackground2_Herosection.jpeg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "120%", // Extra height for parallax

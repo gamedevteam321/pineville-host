@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 
 const About = () => {
@@ -31,9 +30,9 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="section-padding bg-gradient-to-b from-white to-apple-50 leaf-pattern">
+    <section id="about" className="section-padding py-12 md:py-20 bg-gradient-to-b from-white to-apple-50 leaf-pattern">
       <div className="container-custom">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <div 
               ref={el => elementsRef.current[0] = el}
@@ -42,14 +41,14 @@ const About = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-xl apple-shadow">
                 <img 
                   src="https://images.unsplash.com/photo-1569870499705-504209102861?q=80&w=2574&auto=format&fit=crop" 
-                  alt="Apple orchard with ripe Gala apples" 
-                  className="w-full h-[500px] object-cover"
+                  alt="High-density apple orchard" 
+                  className="w-full h-[460px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg glass-card">
-                <p className="font-serif text-lg font-medium text-apple-700">
-                  Harvesting since 1952
+              <div className="absolute -bottom-4 -right-4 bg-white p-3 rounded-xl shadow-lg glass-card">
+                <p className="font-serif text-base font-medium text-apple-700">
+                  Revolutionizing Apple Farming
                 </p>
               </div>
             </div>
@@ -61,37 +60,39 @@ const About = () => {
               className="scroll-reveal"
               style={{ transitionDelay: "0.2s" }}
             >
-              <h2 className="heading-lg text-apple-800 mb-6">
-                A Family Tradition of Growing Perfect Apples
+              <h2 className="heading-lg text-apple-800 mb-3">
+                Transforming India's Apple Industry
               </h2>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                For over 70 years, our family-owned orchards have been dedicated to cultivating the finest Gala apples. Nestled in the heart of the fertile countryside with ideal growing conditions, we combine traditional farming wisdom with modern sustainable practices.
-              </p>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Our Gala apples are known for their distinctive sweet flavor, crisp texture, and beautiful red striped skin. Each apple is hand-picked at the perfect moment of ripeness to ensure exceptional quality and taste.
-              </p>
+              <div className="flex flex-col gap-3">
+                <p className="text-base text-gray-700 leading-relaxed">
+                  Pine Valley Agri is developing India's largest high-density apple orchard, revolutionizing cultivation with innovative practices for superior quality and sustainability. Our high-density orchards yield fruit within a year, reaching full productivity in just 4-5 years.
+                </p>
+                <p className="text-base text-gray-700 leading-relaxed">
+                  We cultivate premium varieties including Schnico Red Gala, Dark Baron Gala, Devil Gala, Royal Gala, and Redlum Gala. With 1,500 acres under development across Northern India, we're bridging the gap between low productivity and rising demand.
+                </p>
+              </div>
             </div>
 
             <div 
               ref={el => elementsRef.current[2] = el}
-              className="scroll-reveal grid grid-cols-2 gap-6 mt-10"
+              className="scroll-reveal grid grid-cols-2 gap-4 mt-6"
               style={{ transitionDelay: "0.4s" }}
             >
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <h3 className="font-serif text-xl font-bold text-apple-700 mb-2">Naturally Sweet</h3>
-                <p className="text-gray-600">Our Gala apples have a naturally high sugar content, making them perfect for snacking.</p>
+              <div className="bg-white p-4 rounded-xl shadow-sm">
+                <h3 className="font-serif text-lg font-bold text-apple-700 mb-1">Early Yields</h3>
+                <p className="text-sm text-gray-600">High-density orchards produce fruit within first year versus traditional decade-long wait.</p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <h3 className="font-serif text-xl font-bold text-apple-700 mb-2">Heart Healthy</h3>
-                <p className="text-gray-600">Rich in dietary fiber and antioxidants that support cardiovascular health.</p>
+              <div className="bg-white p-4 rounded-xl shadow-sm">
+                <h3 className="font-serif text-lg font-bold text-apple-700 mb-1">Global Expertise</h3>
+                <p className="text-sm text-gray-600">Drawing on experience from CIS, South America, Serbia, and North Africa to pioneer in India.</p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <h3 className="font-serif text-xl font-bold text-apple-700 mb-2">Sustainably Grown</h3>
-                <p className="text-gray-600">We use eco-friendly farming practices to protect our environment for future generations.</p>
+              <div className="bg-white p-4 rounded-xl shadow-sm">
+                <h3 className="font-serif text-lg font-bold text-apple-700 mb-1">Strategic Growth</h3>
+                <p className="text-sm text-gray-600">Our Balanced Integration Strategy enhances value and control across the entire supply chain.</p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <h3 className="font-serif text-xl font-bold text-apple-700 mb-2">Versatile Use</h3>
-                <p className="text-gray-600">Perfect for eating fresh, baking, salads, and creating delicious smoothies.</p>
+              <div className="bg-white p-4 rounded-xl shadow-sm">
+                <h3 className="font-serif text-lg font-bold text-apple-700 mb-1">Tech-Enabled</h3>
+                <p className="text-sm text-gray-600">Leveraging modern technology, research, and best global practices for sustainable orchards.</p>
               </div>
             </div>
           </div>

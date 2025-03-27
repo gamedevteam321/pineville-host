@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
@@ -46,8 +45,8 @@ const Index = () => {
         <Hero />
         <About />
         <Products />
-        <Recipes />
         <Contact />
+        <Recipes />
       </main>
       <Footer />
     </div>
