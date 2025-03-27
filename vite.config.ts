@@ -5,6 +5,13 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   base: "/pineville-host/",
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+    emptyOutDir: true,
+    sourcemap: false,
+    copyPublicDir: true,
+  },
   server: {
     host: "::",
     port: 5000,
