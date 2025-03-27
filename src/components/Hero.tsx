@@ -25,7 +25,7 @@ const Hero = () => {
         ref={heroRef}
         className="absolute inset-0 -z-10"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1596591868231-05e503c9489c?q=80&w=2574&auto=format&fit=crop')",
+          backgroundImage: "url('/lovable-uploads/c71a9737-2779-4195-9fe6-3171fd5e8616.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "120%", // Extra height for parallax
@@ -36,18 +36,18 @@ const Hero = () => {
       {/* Content */}
       <div className="container-custom relative z-20">
         <div className="max-w-3xl">
-          <span className="inline-block px-3 py-1 text-xs font-medium tracking-wider text-white uppercase bg-apple-600 rounded-full animate-fade-in">Nature's Perfect Snack</span>
+          <span className="inline-block px-3 py-1 text-xs font-medium tracking-wider text-white uppercase bg-red-600 rounded-full animate-fade-in">Nature's Perfect Snack</span>
           <h1 className="heading-xl mt-4 text-white drop-shadow-sm animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            Discover the Sweet Crunch of Gala Apples
+            Discover the Sweet Crunch of Pine Valley Apples
           </h1>
           <p className="mt-6 text-lg text-white/90 leading-relaxed max-w-xl animate-slide-up" style={{ animationDelay: "0.4s" }}>
-            Grown with care in our sustainable orchards, our Gala apples offer the perfect blend of sweetness, crispness, and natural goodness in every bite.
+            Grown with care in our sustainable orchards, our apples offer the perfect blend of sweetness, crispness, and natural goodness in every bite.
           </p>
           <div className="mt-8 flex flex-wrap gap-4 animate-slide-up" style={{ animationDelay: "0.6s" }}>
             <a href="#products" className="btn-primary">
               Explore Our Apples
             </a>
-            <a href="#about" className="bg-white text-apple-700 hover:bg-white/90 font-medium px-6 py-3 rounded-lg transition-all duration-300 ease-in-out shadow-sm hover:shadow-md">
+            <a href="#about" className="bg-white text-red-700 hover:bg-white/90 font-medium px-6 py-3 rounded-lg transition-all duration-300 ease-in-out shadow-sm hover:shadow-md">
               Learn More
             </a>
           </div>
