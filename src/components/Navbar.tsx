@@ -30,38 +30,38 @@ const Navbar = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between">
           <a href="/" className="flex items-center">
-            <span className="text-leaf-700 font-serif text-2xl font-bold">Pine Valley</span>
+            <img src="/lovable-uploads/8ec81d59-e073-444e-bf51-8d88b5a39989.png" alt="Pine Valley Logo" className="h-10" />
           </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <a 
               href="#home" 
-              className="text-foreground hover:text-leaf-600 font-medium transition-custom"
+              className="text-foreground hover:text-red-600 font-medium transition-custom"
             >
               Home
             </a>
             <a 
               href="#about" 
-              className="text-foreground hover:text-leaf-600 font-medium transition-custom"
+              className="text-foreground hover:text-red-600 font-medium transition-custom"
             >
               About
             </a>
             <a 
               href="#products" 
-              className="text-foreground hover:text-leaf-600 font-medium transition-custom"
+              className="text-foreground hover:text-red-600 font-medium transition-custom"
             >
               Our Apples
             </a>
             <a 
               href="#recipes" 
-              className="text-foreground hover:text-leaf-600 font-medium transition-custom"
+              className="text-foreground hover:text-red-600 font-medium transition-custom"
             >
               Recipes
             </a>
             <a 
               href="#contact" 
-              className="text-foreground hover:text-leaf-600 font-medium transition-custom"
+              className="text-foreground hover:text-red-600 font-medium transition-custom"
             >
               Contact
             </a>
@@ -91,35 +91,35 @@ const Navbar = () => {
         <nav className="flex flex-col space-y-6">
           <a 
             href="#home" 
-            className="text-foreground hover:text-leaf-600 font-medium text-lg transition-custom"
+            className="text-foreground hover:text-red-600 font-medium text-lg transition-custom"
             onClick={() => setIsMenuOpen(false)}
           >
             Home
           </a>
           <a 
             href="#about" 
-            className="text-foreground hover:text-leaf-600 font-medium text-lg transition-custom"
+            className="text-foreground hover:text-red-600 font-medium text-lg transition-custom"
             onClick={() => setIsMenuOpen(false)}
           >
             About
           </a>
           <a 
             href="#products" 
-            className="text-foreground hover:text-leaf-600 font-medium text-lg transition-custom"
+            className="text-foreground hover:text-red-600 font-medium text-lg transition-custom"
             onClick={() => setIsMenuOpen(false)}
           >
             Our Apples
           </a>
           <a 
             href="#recipes" 
-            className="text-foreground hover:text-leaf-600 font-medium text-lg transition-custom"
+            className="text-foreground hover:text-red-600 font-medium text-lg transition-custom"
             onClick={() => setIsMenuOpen(false)}
           >
             Recipes
           </a>
           <a 
             href="#contact" 
-            className="text-foreground hover:text-leaf-600 font-medium text-lg transition-custom"
+            className="text-foreground hover:text-red-600 font-medium text-lg transition-custom"
             onClick={() => setIsMenuOpen(false)}
           >
             Contact
