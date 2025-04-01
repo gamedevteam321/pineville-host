@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between">
           <a href="/" className="flex items-center">
-            <img src="/images/logo.png" alt="Pine Valley" className="h-12" />
+            <img src="./images/logo.png" alt="Pine Valley" className="h-12" />
           </a>
 
           {/* Desktop Navigation */}

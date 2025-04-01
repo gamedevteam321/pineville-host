@@ -44,7 +44,7 @@ const Hero = () => {
           className="w-full h-full object-cover"
           style={{ height: "120%" }}
         >
-          <source src="/videos/orchid-tour.mp4" type="video/mp4" />
+          <source src="./videos/orchid-tour.mp4" type="video/mp4" />
         </video>
       </div>
 
