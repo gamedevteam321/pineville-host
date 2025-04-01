@@ -11,6 +11,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
   ].filter(Boolean),
+  base: '/pineville-host/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
