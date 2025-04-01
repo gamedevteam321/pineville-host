@@ -41,7 +41,7 @@ const Products = () => {
     schnico: {
       title: "Schnico Red Gala",
       description: "Schnico Red Gala apples are known for their vibrant red color and exceptional sweetness. These premium apples feature a bright crisp texture and a perfectly balanced flavor profile that makes them ideal for fresh eating and gourmet recipes.",
-      image: "/images/schnico.png",
+      image: "./images/schnico.png",
       features: [
         "Vibrant red coloration",
         "Exceptionally sweet flavor",
@@ -58,7 +58,7 @@ const Products = () => {
     darkbaron: {
       title: "Dark Baron Gala",
       description: "Dark Baron Gala apples feature a distinctive deep burgundy color and rich, complex flavor. Their darker skin hides a crisp, aromatic flesh with notes of honey and vanilla, making them a sophisticated choice for connoisseurs.",
-      image: "/images/darkbaron.png",
+      image: "./images/darkbaron.png",
       features: [
         "Deep burgundy coloration",
         "Rich, complex flavor profile",
@@ -75,7 +75,7 @@ const Products = () => {
     devil: {
       title: "Devil Gala Apple",
       description: "The Devil Gala Apple stands out with its intense red color and bold, assertive flavor. These apples provide a perfect balance of sweetness and tanginess with a slightly spicy finish, making them particularly excellent for baking and cider.",
-      image: "/images/devil.png",
+      image: "./images/devil.png",
       features: [
         "Intense red coloration",
         "Bold, assertive flavor",
@@ -92,7 +92,7 @@ const Products = () => {
     royal: {
       title: "Royal Gala Apples",
       description: "Royal Gala apples are a premium selection with a more intense color and slightly sweeter flavor profile than regular Galas. These apples have a distinctive red blush covering most of the fruit, making them both beautiful and delicious.",
-      image: "/images/royalgala.png",
+      image: "./images/royalgala.png",
       features: [
         "Enhanced sweetness",
         "Elegant red coloration",
