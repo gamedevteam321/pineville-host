@@ -28,37 +28,25 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative h-screen flex items-center overflow-hidden">
-      {/* Black overlay with 30% opacity */}
-      <div className="absolute inset-0 bg-black/30 z-10"></div>
+      {/* Black overlay with 50% opacity */}
+      <div className="absolute inset-0 bg-black/50 z-10"></div>
       
-      {/* Background image 1 */}
+      {/* Video Background */}
       <div 
         ref={heroRef}
-        className={`absolute inset-0 -z-10 transition-opacity duration-1000 ease-in-out ${
-          activeBackground === 0 ? 'opacity-100' : 'opacity-0'
-        }`}
-        style={{
-          backgroundImage: "url('/images/Orchidbackground1_Herosection.jpeg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "120%", // Extra height for parallax
-          top: "-10%"
-        }}
-      ></div>
-      
-      {/* Background image 2 */}
-      <div 
-        className={`absolute inset-0 -z-10 transition-opacity duration-1000 ease-in-out ${
-          activeBackground === 1 ? 'opacity-100' : 'opacity-0'
-        }`}
-        style={{
-          backgroundImage: "url('/images/Orchidbackground2_Herosection.jpeg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          height: "120%", // Extra height for parallax
-          top: "-10%"
-        }}
-      ></div>
+        className="absolute inset-0 -z-10"
+      >
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover"
+          style={{ height: "120%" }}
+        >
+          <source src="/videos/orchid-tour.mp4" type="video/mp4" />
+        </video>
+      </div>
 
       {/* Content */}
       <div className="container-custom relative z-20">
